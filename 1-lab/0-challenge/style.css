@@ -1,0 +1,89 @@
+:root {
+    --blue: rgb(15, 65, 228);
+    --red: rgb(218, 28, 11);
+    --yellow: rgb(220, 200, 20);
+    --beige: rgb(180, 170, 150);
+    --white: rgb(250, 250, 250);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--beige);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 4fr;
+    grid-template-rows: 2fr .5fr 3.5fr 1fr;
+    background-color: rgb(0, 0, 0);
+    margin: 50px auto;
+    height: 90vh;
+    width: 40vw;
+    border-top: 10px solid rgb(0, 0, 0);
+    border-bottom: 10px solid rgb(0, 0, 0);
+    box-shadow: -10px 0 8px rgb(100, 100, 100);
+}
+
+.box {
+    margin: 10px 0;
+}
+
+
+.one,
+.three,
+.four,
+.five,
+.six,
+.nine,
+.eleven,
+.twelve,
+.thirteen {
+    background-color: var(--white);
+}
+
+.one,
+.four,
+.eight,
+.twelve,
+.five,
+.nine,
+.two,
+.six,
+.ten,
+.thirteen {
+    margin-right: 20px;
+}
+
+
+.two {
+    grid-column: 2 / 4;
+}
+
+
+
+.two,
+.seven {
+    background-color: var(--red);
+}
+
+.eight,
+.fourteen {
+    background-color: var(--blue);
+}
+
+.ten {
+    background-color: var(--yellow);
+}
+
+.thirteen {
+    grid-column: 2 / 4;
+}
+
+.fourteen {
+    grid-column: 4;
+    margin-right: none;
+}
